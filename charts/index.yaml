@@ -3,7 +3,40 @@ entries:
   prometheus:
   - apiVersion: v1
     appVersion: 2.21.0
-    created: "2020-10-06T15:19:14.2772414+09:00"
+    created: "2020-10-06T15:34:24.2996641+09:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://dragoneena12.github.io/helm-repo/
+      version: 3.0.0
+    description: Prometheus is a monitoring system and time series database.
+    digest: 3eabc9d9e41cfe2da3176e3369fbea999a0ed53855ed4d6698d9e422abe79cf9
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: monotek23@gmail.com
+      name: monotek
+    - email: naseem@transit.app
+      name: naseemkullah
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    urls:
+    - prometheus-11.16.3.tgz
+    version: 11.16.3
+  - apiVersion: v1
+    appVersion: 2.21.0
+    created: "2020-10-06T15:34:24.2948629+09:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -34,4 +67,4 @@ entries:
     urls:
     - prometheus-11.16.2.tgz
     version: 11.16.2
-generated: "2020-10-06T15:19:14.2704863+09:00"
+generated: "2020-10-06T15:34:24.2886266+09:00"
